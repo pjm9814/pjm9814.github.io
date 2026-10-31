@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Peter Marshall</title>
+  <meta name="description" content="Peter Marshall, PhD student in Management &amp; Organizations at NYU Stern School of Business.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f7f5f0;
+      --text: #1f1d1a;
+      --muted: #6b665d;
+      --accent: #57068c; /* NYU violet */
+      --rule: #ddd8cc;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #161514;
+        --text: #ebe7df;
+        --muted: #a39d92;
+        --accent: #c9a3ef;
+        --rule: #34312c;
+      }
+    }
+
+    * { box-sizing: border-box; margin: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Source Serif 4", Georgia, serif;
+      font-size: 18px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      min-height: 100vh;
+    }
+
+    .text {
+      padding: 12vh 6vw 10vh;
+      max-width: 40rem;
+      justify-self: end;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 2.1rem;
+      font-weight: 600;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+
+    .role {
+      color: var(--muted);
+      margin-top: 0.35rem;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem 1.25rem;
+      margin: 1.5rem 0 2.25rem;
+      padding-bottom: 1.75rem;
+      border-bottom: 1px solid var(--rule);
+      font-size: 0.95rem;
+    }
+
+    p + p { margin-top: 1.1rem; }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+    }
+    a:hover { border-bottom-color: var(--accent); }
+
+    .photo {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+    }
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 30%;
+    }
+
+    @media (max-width: 800px) {
+      .page { grid-template-columns: 1fr; }
+      .photo { position: static; height: 60vh; order: -1; }
+      .text { padding: 2.5rem 16px 4rem; justify-self: stretch; }
+      h1 { font-size: 1.8rem; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="text">
+      <h1>Peter Marshall</h1>
+      <p class="role">PhD Student in Management &amp; Organizations, NYU Stern School of Business</p>
+
+      <nav class="links">
+        <a href="mailto:petermarshall@stern.nyu.edu">Email</a>
+        <a href="cv.pdf">CV</a>
+        <a href="https://scholar.google.com/citations?user=-3km30YAAAAJ&amp;hl=en">Google Scholar</a>
+        <a href="https://www.linkedin.com/in/petermarshall21/">LinkedIn</a>
+        <a href="https://www.stern.nyu.edu/experience-stern/about/departments-centers-initiatives/academic-departments/management-and-organizations/our-people/doctoral-students/peter-marshall">NYU Stern</a>
+        <a href="https://lilbabygrand.com">Music</a>
+      </nav>
+
+      <p>I study creativity and the creative and cultural industries, drawing on strategy and organizational theory. Most of my work is set in the music industry in one way or another, though not all of it.</p>
+
+      <p>My current projects look at the relationship between rivalry and collaboration, using archival data and experiments; how people learn in a synthesizer lending library, through participant observation and interviews; and how social cohesion shapes outcomes in microfinance group lending, using archival data and interviews.</p>
+
+      <p>Before coming to Stern, I received a BS in Economics from Brigham Young University.</p>
+
+      <p>Outside of research, I write, produce, and perform music as <a href="https://lilbabygrand.com">Lil Baby Grand</a>, including co-writing and co-production credits on Tainy&rsquo;s Grammy-nominated album <i>DATA</i>.</p>
+    </section>
+
+    <aside class="photo">
+      <img src="photo.jpg" alt="Peter Marshall">
+    </aside>
+  </main>
+</body>
+</html>
